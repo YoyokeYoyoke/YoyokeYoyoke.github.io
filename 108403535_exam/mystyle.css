@@ -1,0 +1,69 @@
+
+ul {
+	font-size: 24px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+li {
+	float: left;
+	font-size: 30px;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 14px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: gray;
+}
+
+body {
+	font-size: 50px;
+	background: -webkit-linear-gradient(-8deg, rgb(255,255,255), rgb(0,59,119));
+}
+li a, .contact {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 10px 14px;
+	text-decoration: none;
+}
+li a:hover, .drop:hover .contact {
+	background-color: gray;
+}
+li.drop {
+	display: inline-block;
+}
+
+.drop-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.drop-content a {
+		color: black;
+		padding: 10px 14px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+}
+.drop-content a:hover {
+	background-color: #FFF4C1;
+}
+.drop:hover .drop-content {
+	display: block;
+}
+
+
